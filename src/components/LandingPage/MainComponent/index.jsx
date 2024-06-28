@@ -1,10 +1,10 @@
 import React from "react";
 import Button from "../../Common/Button";
-import "./styles.css";
+import "./style.css";
 import gradient from "../../../assets/gradient.png";
 import iphone from "../../../assets/iphone.png";
 import { motion } from "framer-motion";
-import { RWebShare } from "react-web-share";
+// import { RWebShare } from "react-web-share";
 import { toast } from "react-toastify";
 
 function MainComponent() {
@@ -45,7 +45,7 @@ function MainComponent() {
           <a href="/dashboard">
             <Button text={"Dashboard"} />
           </a>
-          <RWebShare
+          {/* <RWebShare
             data={{
               text: "CryptoDashboard using React JS.",
               url: "https://crypto-dashboard-jan.netlify.app",
@@ -54,7 +54,7 @@ function MainComponent() {
             onClick={() => toast.info("App Shared!")}
           >
             <Button text={"Share App"} outlined={true} />
-          </RWebShare>
+          </RWebShare> */}
         </motion.div>
       </div>
       <div className="gradient-div">

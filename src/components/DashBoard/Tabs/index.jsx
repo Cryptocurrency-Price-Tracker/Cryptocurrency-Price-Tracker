@@ -3,10 +3,10 @@ import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
-import "./styles.css";
+import "./style.css";
 import Grid from "../Grid";
 import List from "../List";
-import { convertNumber } from "../../../functions/convertNumber";
+// import { convertNumber } from "../../../functions/convertNumber";
 import Button from "../../Common/Button";
 
 export default function TabsComponent({ coins, setSearch }) {

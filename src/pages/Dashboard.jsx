@@ -3,11 +3,11 @@ import React, { useEffect, useState } from "react";
 import Header from "../components/Common/Header";
 import Loader from "../components/Common/Loader";
 import Search from "../components/Dashboard/Search";
-import TabsComponent from "../components/Dashboard/Tabs";
+import TabsComponent from "../components/DashBoard/Tabs"
 
 import PaginationComponent from "../components/Dashboard/Pagination";
 import TopButton from "../components/Common/TopButton";
-import Footer from "../components/Common/Footer/footer";
+// import Footer from "../components/Common/Footer/footer";
 
 function Dashboard() {
   const [coins, setCoins] = useState([]);
@@ -86,7 +86,7 @@ function Dashboard() {
         </>
       )}
       <TopButton />
-      <Footer />
+      
     </>
   );
 }
