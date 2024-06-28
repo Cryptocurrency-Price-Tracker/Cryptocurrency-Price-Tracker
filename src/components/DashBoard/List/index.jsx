@@ -6,13 +6,13 @@ import { convertNumber } from "../../../functions/convertNumber";
 import { motion } from "framer-motion";
 import { Tooltip } from "@mui/material";
 import StarOutlineIcon from "@mui/icons-material/StarOutline";
-import { saveItemToWatchlist } from "../../../functions/saveItemToWatchlist";
+// import { saveItemToWatchlist } from "../../../functions/saveItemToWatchlist";
 import StarIcon from "@mui/icons-material/Star";
-import { removeItemToWatchlist } from "../../../functions/removeItemToWatchlist";
+// import { removeItemToWatchlist } from "../../../functions/removeItemToWatchlist";
 
 function List({ coin, delay }) {
-  const watchlist = JSON.parse(localStorage.getItem("watchlist"));
-  const [isCoinAdded, setIsCoinAdded] = useState(watchlist?.includes(coin.id));
+  // const watchlist = JSON.parse(localStorage.getItem("watchlist"));
+  // const [isCoinAdded, setIsCoinAdded] = useState(watchlist?.includes(coin.id));
   return (
     <a href={`/coin/${coin.id}`}>
       <motion.tr
@@ -84,7 +84,7 @@ function List({ coin, delay }) {
           </td>
         </Tooltip>
         <td className="coin-name mobile">${convertNumber(coin.market_cap)}</td>
-        <td
+        {/* <td
           className={`watchlist-icon ${
             coin.price_change_percentage_24h < 0 && "watchlist-icon-red"
           }`}
@@ -99,7 +99,7 @@ function List({ coin, delay }) {
           }}
         >
           {isCoinAdded ? <StarIcon /> : <StarOutlineIcon />}
-        </td>
+        </td> */}
       </motion.tr>
     </a>
   );

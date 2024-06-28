@@ -2,10 +2,11 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Header from "../components/Common/Header";
 import Loader from "../components/Common/Loader";
-import Search from "../components/Dashboard/Search";
+import SearchB from "../components/DashBoard/Search"
 import TabsComponent from "../components/DashBoard/Tabs"
 
-import PaginationComponent from "../components/Dashboard/Pagination";
+import PaginationComponent from '../components/DashBoard/Pagination'
+
 import TopButton from "../components/Common/TopButton";
 // import Footer from "../components/Common/Footer/footer";
 
@@ -72,7 +73,7 @@ function Dashboard() {
         <Loader />
       ) : (
         <>
-          <Search search={search} handleChange={handleChange} />
+          <SearchB search={search} handleChange={handleChange} />
           <TabsComponent
             coins={search ? filteredCoins : paginatedCoins}
             setSearch={setSearch}
