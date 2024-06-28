@@ -1,6 +1,9 @@
-
-import React from 'react'
-import "./styles.css"
+import React, { useEffect, useState } from "react";
+import Button from "../Button";
+import TemporaryDrawer from "./drawer";
+import "./styles.css";
+import Switch from "@mui/material/Switch";
+import { toast } from "react-toastify";
 
 function Header() {
   return (
@@ -20,11 +23,11 @@ function Header() {
           <p className="link">Watchlist</p>
         </a>
         <a href="/dashboard">
-          {/* <Button text={"dashboard"} /> */}
+          <Button text={"dashboard"} />
         </a>
       </div>
       <div className="drawer-component">
-        {/* <TemporaryDrawer /> */}
+        <TemporaryDrawer />
       </div>
     </div>
   )
