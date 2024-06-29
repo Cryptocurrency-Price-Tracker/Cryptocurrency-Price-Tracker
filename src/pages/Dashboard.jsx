@@ -2,10 +2,10 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Header from "../components/Common/Header";
 import Loader from "../components/Common/Loader";
-import SearchB from "../components/DashBoard/Search"
-import TabsComponent from "../components/DashBoard/Tabs"
+import SearchB from "../components/Dashboard/Search"
+import TabsComponent from "../components/Dashboard/Tabs"
 
-import PaginationComponent from "../components/DashBoard/Pagination"
+import PaginationComponent from "../components/Dashboard/Pagination"
 
 import TopButton from "../components/Common/TopButton";
 // import Footer from "../components/Common/Footer/footer";
