@@ -8,7 +8,7 @@ import TabsComponent from "../components/Dashboard/Tabs"
 import PaginationComponent from "../components/Dashboard/Pagination"
 
 import TopButton from "../components/Common/TopButton";
-// import Footer from "../components/Common/Footer/footer";
+import Footer from "../components/Common/Footer";
 
 function Dashboard() {
   const [coins, setCoins] = useState([]);
@@ -44,14 +44,14 @@ function Dashboard() {
     console.log(e.target.value);
   };
 
-  // var filteredCoins = coins.filter((coin) => {
-  //   if (
-  //     coin.name.toLowerCase().includes(search.trim().toLowerCase()) ||
-  //     coin.symbol.toLowerCase().includes(search.trim().toLowerCase())
-  //   ) {
-  //     return coin;
-  //   }
-  // });
+  var filteredCoins = coins.filter((coin) => {
+    if (
+      coin.name.toLowerCase().includes(search.trim().toLowerCase()) ||
+      coin.symbol.toLowerCase().includes(search.trim().toLowerCase())
+    ) {
+      return coin;
+    }
+  });
 
   var filteredCoins = coins.filter(
     (coin) =>

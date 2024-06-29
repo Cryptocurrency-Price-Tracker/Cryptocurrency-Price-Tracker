@@ -4,13 +4,13 @@ import TrendingDownRoundedIcon from "@mui/icons-material/TrendingDownRounded";
 import TrendingUpRoundedIcon from "@mui/icons-material/TrendingUpRounded";
 import { motion } from "framer-motion";
 import StarOutlineIcon from "@mui/icons-material/StarOutline";
-// import { saveItemToWatchlist } from "../../../functions/saveItemToWatchlist";
+import { saveItemToWatchlist } from "../../../functions/saveItemToWatchlist";
 import StarIcon from "@mui/icons-material/Star";
-// import { removeItemToWatchlist } from "../../../functions/removeItemToWatchlist";
+import { removeItemToWatchlist } from "../../../functions/removeItemToWatchlist";
 
 function Grid({ coin, delay }) {
-  // const watchlist = JSON.parse(localStorage.getItem("watchlist"));
-  // const [isCoinAdded, setIsCoinAdded] = useState(watchlist?.includes(coin.id));
+  const watchlist = JSON.parse(localStorage.getItem("watchlist"));
+  const [isCoinAdded, setIsCoinAdded] = useState(watchlist?.includes(coin.id));
 
   return (
     <a href={`/coin/${coin.id}`}>
@@ -27,7 +27,7 @@ function Grid({ coin, delay }) {
               <p className="coin-symbol">{coin.symbol}</p>
               <p className="coin-name">{coin.name}</p>
             </div>
-            {/* <div
+            <div
               className={`watchlist-icon ${
                 coin.price_change_percentage_24h < 0 && "watchlist-icon-red"
               }`}
@@ -43,7 +43,7 @@ function Grid({ coin, delay }) {
               }}
             >
               {isCoinAdded ? <StarIcon /> : <StarOutlineIcon />}
-            </div> */}
+            </div>
           </div>
         </div>
         {coin.price_change_percentage_24h >= 0 ? (
