@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Button from "../components/Common/Button";
 import Header from "../components/Common/Header";
-import TabsComponent from "../components/Dashboard/Tabs";
+import TabsComponent from "../components/DashBoard/Tabs";
 import { get100Coins } from "../functions/get100Coins";
 
 function Watchlist() {

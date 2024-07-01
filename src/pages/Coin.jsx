@@ -11,7 +11,7 @@ import ToggleComponents from "../components/CoinPage/ToggleComponent";
 import Button from "../components/Common/Button";
 import Header from "../components/Common/Header";
 import Loader from "../components/Common/Loader";
-import List from "../components/Dashboard/List";
+import List from "../components/DashBoard/List";
 import { getCoinData } from "../functions/getCoinData";
 import { getPrices } from "../functions/getPrices";
 

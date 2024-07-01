@@ -5,7 +5,7 @@ import ToggleComponents from "../components/CoinPage/ToggleComponent";
 import Header from "../components/Common/Header";
 import Loader from "../components/Common/Loader";
 import SelectCoins from "../components/ComparePage/SelectCoins";
-import List from "../components/Dashboard/List";
+import List from "../components/DashBoard/List";
 import { get100Coins } from "../functions/get100Coins";
 import { getCoinData } from "../functions/getCoinData";
 import { getPrices } from "../functions/getPrices";

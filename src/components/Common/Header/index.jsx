@@ -40,7 +40,7 @@ function Header() {
     document.documentElement.setAttribute("data-theme", "light");
   };
 
-  
+
   return (
     <div className="header">
       <Link to="/"><h1>
